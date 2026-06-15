@@ -72,7 +72,7 @@ Then **restart Claude Code** (a new skill folder is picked up on restart). Now t
 
 ## What a run looks like
 
-![A /fable judge-panel run](assets/demo.svg)
+![A /fable judge-panel run](assets/demo.png)
 
 ```text
 > /fable what's the root cause of the intermittent auth timeouts?
