@@ -1,6 +1,8 @@
 # fable — a poor man's Fable for Claude Code
 
-A single Claude Code slash command, `/fable`, that approximates Anthropic's top **Fable** model using **orchestrated Claude Opus** — for when Fable is gated, unavailable, or too expensive for you.
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg) ![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-blue) ![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+
+A single Claude Code slash command, `/fable`, that approximates Anthropic's top **Fable** model using **orchestrated Claude Opus** — for when Fable isn't available on your plan or is too expensive for you.
 
 You type `/fable <your task>` and the message goes into "fake Fable mode": Opus, run at maximum effort, with diverse-method multi-agent panels, adversarial verification, and a self-critique pass.
 
@@ -56,6 +58,23 @@ Then **restart Claude Code** (a new skill folder is picked up on restart). Now t
 /fable add dark-mode support across the settings screens             # → plan-implement-verify
 /fable as panel: which queue design fits a 10x traffic spike?        # → force a route
 ```
+
+## What a run looks like
+
+```text
+> /fable what's the root cause of the intermittent auth timeouts?
+
+[fable] hard single question → judge panel
+  · spawning 4 independent solvers (first-principles · counterexample ·
+    analogy-to-known-system · failure-mode-first)
+  · self-critique pass on each
+  · judge: cross-checking agreement vs dissent
+→ Root cause: the token refresh races the request retry on cold start.
+  3/4 solvers agree; 1 dissent (clock skew) flagged low-confidence.
+  Fix + verification steps below.
+```
+
+Trivial questions skip the panel and get answered directly — you only pay for orchestration when the task is actually hard.
 
 ## Recommended companion setup (optional, but this is where it gets good)
 

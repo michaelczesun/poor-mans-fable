@@ -16,7 +16,7 @@ $ARGUMENTS
 ## What this is (honest, read first)
 
 - Fable 5 is Anthropic's top model tier, above Opus. Its edge is raw model intelligence, not a feature or a mode. No prompt, skill, or config can turn Opus into Fable. There is no hidden "Fable mode".
-- If Fable is gated, unavailable, or too expensive for you, this is the next best thing: Opus pushed to its maximum. The goal is to get as close to Fable-grade output as Opus can, not to match it 100%. That gap is real and acknowledged.
+- If Fable isn't available on your plan or is too expensive for you, this is the next best thing: Opus pushed to its maximum. The goal is to get as close to Fable-grade output as Opus can, not to match it 100%. That gap is real and acknowledged.
 - The lever is discipline + orchestration: spend more compute through DIVERSE solution paths (different methods, not the same reasoning repeated) plus adversarial verification plus a self-critique pass. On decomposable or checkable tasks this reaches Fable-level results. On a single deep, tightly-coupled chain of reasoning a residual gap remains (several Opus agents can make the same mistake) - shrink it with method diversity, max thinking, and self-critique. Never bail out to "just use Fable".
 
 ## Always
