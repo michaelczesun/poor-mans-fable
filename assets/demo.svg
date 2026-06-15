@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect x="0" y="0" width="900" height="470" rx="12" fill="#0d1117"/>
+  <rect x="0" y="0" width="900" height="40" rx="12" fill="#161b22"/>
+  <rect x="0" y="28" width="900" height="12" fill="#161b22"/>
+  <circle cx="24" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="46" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="68" cy="20" r="6" fill="#27c93f"/>
+  <text x="450" y="25" text-anchor="middle" font-size="14" fill="#8b949e">Claude Code  —  /fable</text>
+
+  <text x="28" y="86" font-size="16" fill="#3fb950">$ <tspan fill="#e6edf3">/fable what's the root cause of the intermittent auth timeouts?</tspan></text>
+
+  <text x="28" y="138" font-size="16" fill="#58a6ff">[fable]<tspan fill="#8b949e">  hard single question  </tspan><tspan fill="#d2a8ff">→</tspan><tspan fill="#8b949e">  judge panel</tspan></text>
+  <text x="28" y="168" font-size="16" fill="#6e7681">  · <tspan fill="#8b949e">4 independent solvers, each a different method</tspan></text>
+  <text x="28" y="198" font-size="16" fill="#6e7681">  · <tspan fill="#8b949e">self-critique pass on each</tspan></text>
+  <text x="28" y="228" font-size="16" fill="#6e7681">  · <tspan fill="#8b949e">judge: cross-checks agreement vs dissent</tspan></text>
+
+  <text x="28" y="288" font-size="16" fill="#e3b341">→ <tspan fill="#e6edf3">Root cause: token refresh races the request retry on cold start.</tspan></text>
+  <text x="28" y="318" font-size="16" fill="#e6edf3">  3/4 solvers agree; 1 dissent flagged low-confidence.</text>
+  <text x="28" y="348" font-size="16" fill="#e6edf3">  Verified fix below.</text>
+
+  <text x="28" y="412" font-size="14" fill="#6e7681">Trivial questions skip the panel and get answered directly —</text>
+  <text x="28" y="434" font-size="14" fill="#6e7681">you only pay for orchestration when the task is actually hard.</text>
+</svg>

@@ -31,6 +31,17 @@ A `/fable` slash command that:
 
 ## Install
 
+### Option A — as a Claude Code plugin (one command)
+
+```text
+/plugin marketplace add michaelczesun/poor-mans-fable
+/plugin install fable
+```
+
+Restart Claude Code, then invoke it as `/fable:fable <your task>`.
+
+### Option B — as a plain skill (manual copy)
+
 ```bash
 git clone https://github.com/michaelczesun/poor-mans-fable.git
 cd poor-mans-fable
@@ -60,6 +71,8 @@ Then **restart Claude Code** (a new skill folder is picked up on restart). Now t
 ```
 
 ## What a run looks like
+
+![A /fable judge-panel run](assets/demo.svg)
 
 ```text
 > /fable what's the root cause of the intermittent auth timeouts?

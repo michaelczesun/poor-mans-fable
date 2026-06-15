@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "fable",
+  "displayName": "fable — a poor man's Fable for Claude Code",
+  "version": "0.1.0",
+  "description": "Approximate Anthropic's top Fable model using orchestrated Claude Opus: diverse judge panels, adversarial verification, self-critique. Honest by design - it does not make Opus as smart as Fable.",
+  "author": { "name": "Michael Czesun", "url": "https://github.com/michaelczesun" },
+  "homepage": "https://github.com/michaelczesun/poor-mans-fable#readme",
+  "repository": "https://github.com/michaelczesun/poor-mans-fable",
+  "license": "MIT",
+  "keywords": ["claude-code", "opus", "orchestration", "multi-agent", "ai-agents"]
+}
